@@ -1,0 +1,38 @@
+div {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    top: 100px;
+    left: 100px;
+    animation: pulsiraj 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulsiraj {
+    0% {
+        transform: scale(0.75);
+    }
+
+    25% {
+        background-color: red;
+    }
+
+    50% {
+        background: green;
+    }
+
+    75% {
+        background: blue;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+div:hover{
+    transform: rotate(45deg) translate(24px, 25px);
+}
